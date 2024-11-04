@@ -1,0 +1,52 @@
+method: grid
+metric:
+  goal: minimize
+  name: Training loss
+name: Comparison architectures LSI (LRU)
+parameters:
+  compute_hessian:
+    value: -1
+  d_hidden:
+    value: 64
+  epochs:
+    value: 100
+  force_lsi_min_nu_model:
+    value: true
+  jax_seed:
+    values:
+      - 2023
+      - 2024
+      - 2025
+      - 2026
+      - 2027
+      - 2028
+      - 2029
+      - 2030
+      - 2031
+      - 2032
+  lr_base:
+    values:
+      - 0.32
+      - 0.1
+      - 0.032
+      - 0.01
+      - 0.0032
+  lr_schedule:
+    value: cosine
+  lsi_T:
+    value: 300
+  min_nu:
+    values:
+      - 0.36
+      - 0.68
+      - 0.84
+      - 0.92
+      - 0.96
+      - 0.98
+      - 0.99
+  model:
+    values:
+      - LRU
+  optimizer:
+    value: adam
+program: run_train.py

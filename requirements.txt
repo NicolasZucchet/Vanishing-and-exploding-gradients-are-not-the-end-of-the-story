@@ -1,0 +1,12 @@
+chex
+einops
+flax
+torchaudio
+torchvision
+torchtext
+tensorflow-datasets
+pydub
+datasets
+tqdm
+wandb
+matplotlib

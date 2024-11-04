@@ -1,0 +1,54 @@
+method: grid
+metric:
+  goal: minimize
+  name: Training loss
+name: Shrink eigvals LRU
+parameters:
+  compute_hessian:
+    value: -1
+  d_hidden:
+    value: 64
+  epochs:
+    value: 100
+  force_lsi_min_nu_model:
+    value: true
+  jax_seed:
+    values:
+      - 2023
+      - 2024
+      - 2025
+      - 2026
+      - 2027
+      - 2028
+      - 2029
+      - 2030
+      - 2031
+      - 2032
+  lr_base:
+    values:
+      - 1
+      - 0.32
+      - 0.1
+      - 0.032
+      - 0.01
+      - 0.0032
+      - 0.001
+      - 0.00032
+  lr_schedule:
+    value: cosine
+  lsi_T:
+    value: 300
+  max_phase:
+    values:
+      - 3.14
+      - 0.993
+      - 0.314
+      - 0.0993
+      - 0.0314
+  min_nu:
+    value: 0.99
+  model:
+    value: LRU
+  optimizer:
+    value: adam
+program: run_train.py

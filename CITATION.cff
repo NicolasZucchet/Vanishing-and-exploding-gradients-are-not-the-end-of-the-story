@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Zucchet"
+    given-names: "Nicolas"
+  - family-names: "Orvieto"
+    given-names: "Antonio"
+title: "Recurrent neural networks: vanishing and exploding gradients are not the end of the story."
+version: 0.0.1
+url: "https://github.com/NicolasZucchet/Vanishing-and-exploding-gradients-are-not-the-end-of-the-story"
+date-released: 2024-NOVEMBER-4
